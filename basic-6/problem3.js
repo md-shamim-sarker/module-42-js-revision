@@ -1,0 +1,22 @@
+/* ৩. array কিভাবে ডিক্লেয়ার করে array এর মধ্যে length, index, push, pop, indexOf, includes এইগুলা কিভাবে কাজ করে। কোনটা দিয়ে কি করে? সেগুলা কি তুমি জানো? কোন একটা জিনিস array কিনা সেটা চেক করার সিস্টেম জানতে হবে। আরেকটু ভালো হয় slice এবং splice জানলে। আরো বোনাস কিছু জানতে চাইলে shift, unshift, join দেখতে পারো। এডভান্স হিসেবে reduce দেখতে পারো।  */
+const arr1 = [1, 2, 3, 4, 5];
+console.log(arr1.length);
+arr1[arr1.indexOf(3)] = 6;
+console.log(arr1);
+console.log(arr1.includes(6));
+arr1.push(7);
+console.log(arr1);
+arr1.pop();
+console.log(arr1);
+console.log(Array.isArray(arr1));
+console.log(arr1.slice(0, 3));
+console.log(arr1.splice(2, 1, 3));
+console.log(arr1);
+arr1.unshift(10);
+console.log(arr1);
+arr1.shift();
+console.log(arr1);
+console.log(arr1.join(' + '));
+console.log(arr1.reduce((prev, current) => prev + current, 0));
+// const total = arr1.reduce((previous, current) => previous + current, 0);
+// console.log(total);
